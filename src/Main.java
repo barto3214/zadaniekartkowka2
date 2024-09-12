@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 
 public class Main {
@@ -40,5 +41,18 @@ public class Main {
             }
             System.out.println(liczba);
         }
+        /*
+        * lista - indeksowana, uporządkowana, elementy nieunikatowe
+        * zbiór - nieideksowany(zazwyczaj), nieuporządkowana(zazwyczaj), elementy unikatowe
+        * */
+
+        // zbiór - też zawsze typu złożonego
+        HashSet <Integer> zbior = new HashSet<>();
+        while(zbior.size()< 6){
+            liczba = (int) (Math.random() * 100 + 1);
+            zbior.add(liczba);
+        }
+        System.out.println("Zbiór: ");
+        System.out.println(zbior);
     }
 }
