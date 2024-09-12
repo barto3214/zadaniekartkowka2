@@ -30,6 +30,15 @@ public class Main {
             System.out.println(element + " ");
         }
         System.out.println(Listaliczblosowych);
-        System.out.println(Listaliczblosowych);
+        //losowanie bez powt
+        List <Integer> listalosowychbezpowt = new ArrayList<>();
+        int liczba;
+        for (int i = 0; i < 6; i++) {
+            liczba = (int) (Math.random() * 100 + 1);
+            while (listalosowychbezpowt.contains(liczba)){
+                liczba = (int) (Math.random() * 100 + 1);     //zrobić to!!!
+            }
+            System.out.println(liczba);
+        }
     }
 }
