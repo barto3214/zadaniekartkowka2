@@ -30,5 +30,6 @@ public class Main {
             System.out.println(element + " ");
         }
         System.out.println(Listaliczblosowych);
+        System.out.println(Listaliczblosowych);
     }
 }
