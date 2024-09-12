@@ -57,7 +57,9 @@ public class Main {
         System.out.println("Zbiór: ");
         System.out.println(zbior);
         //lista liczb wczytywanych z klawiatury
+
         Scanner klawiatura = new Scanner(System.in);
+        /*
         List<Integer> listaklawiatura = new ArrayList<>();
         for (int i = 0; i < 6; i++) {
             System.out.println("Wpisz liczbę z klawiatury");
@@ -65,6 +67,31 @@ public class Main {
             listaklawiatura.add(wpisanaliczba);
 
         }
-        System.out.println(listaklawiatura);
+            */
+        //lista liczb wczytywanych z klawiatury i losowanych
+        int liczba2 = 0;
+        int trafione =0;
+        List<Integer> Listaliczblosowych2 = new ArrayList<>();
+        List<Integer> listaklawiatura2 = new ArrayList<>();
+        for (int i = 0; i < 6; i++) {
+            liczba2 = (int) (Math.random() * 6 + 1);
+            Listaliczblosowych2.add(liczba2);
+            System.out.println("Wpisz liczbę z klawiatury");
+            int wpisanaliczba = klawiatura.nextInt();
+            listaklawiatura2.add(wpisanaliczba);
+            if(Listaliczblosowych.contains(liczba2)){
+                trafione += 1;
+            }
+        }
+
+
+
+        System.out.println("Wylosowana lista: ");
+        System.out.println(Listaliczblosowych2);
+        System.out.println("Wpisana lista: ");
+        System.out.println(listaklawiatura2);
+        System.out.println("Trafiłeś: ");
+        System.out.println(trafione);
+
     }
 }
