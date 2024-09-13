@@ -18,6 +18,7 @@ public class Main {
      * wylosuj liczby = metoda, która losuje liczby całkowite z zakresu 1-100
      * @param ile - lista wylosowanych wartości
      * @return lista z wylosowanymi wart
+     * 
      */
 
     private static ArrayList <Integer> wylosujliczby (int ile){
