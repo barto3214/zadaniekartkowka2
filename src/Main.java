@@ -16,6 +16,7 @@ public class Main {
         for (int elem : tablicaliczblosowych) {
             System.out.println(elem + " ");
         }
+        //
         //wypełnianie kolekcji wartościami losowymi
         //kolekcja = przechowuje tylko typy złożone, nie musi mieć zdefiniowanego rozmiaru
         //interface
