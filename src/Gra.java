@@ -50,7 +50,7 @@ public class Gra {
             }
         }
     }
-    private void zagrajmy(){
+    public void zagrajmy(){
         wylosujliczby(20);
         czytajliczby(5);
         sprawdzktorepowt();
